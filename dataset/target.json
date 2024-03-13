@@ -1,0 +1,12 @@
+{
+	"name": "target",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADF_BC23",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": []
+	}
+}
