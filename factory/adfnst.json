@@ -24,7 +24,7 @@
 			},
 			"Whereclause": {
 				"type": "string",
-				"value": "Where"
+				"value": "WHERE"
 			},
 			"Mnumber": {
 				"type": "string",
