@@ -9,6 +9,10 @@
 			"DollarT": {
 				"type": "string",
 				"value": "$"
+			},
+			"BCTable": {
+				"type": "string",
+				"value": "Vendor"
 			}
 		}
 	},
