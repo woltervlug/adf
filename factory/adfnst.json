@@ -29,6 +29,10 @@
 			"Mnumber": {
 				"type": "string",
 				"value": "No_"
+			},
+			"eqsign": {
+				"type": "string",
+				"value": " = "
 			}
 		}
 	},
