@@ -1,0 +1,16 @@
+{
+	"name": "target",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADF_BC23",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "CRONUS Nederland BV$Vendor$437dbf0e-84ff-417a-965d-ed2bb9650972"
+		}
+	}
+}

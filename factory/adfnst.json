@@ -1,5 +1,49 @@
 {
 	"name": "adfnst",
+	"properties": {
+		"globalParameters": {
+			"Companyname": {
+				"type": "string",
+				"value": "CRONUS Nederland BV"
+			},
+			"DollarT": {
+				"type": "string",
+				"value": "$"
+			},
+			"BCTable": {
+				"type": "string",
+				"value": "Vendor"
+			},
+			"BCGuid": {
+				"type": "string",
+				"value": "437dbf0e-84ff-417a-965d-ed2bb9650972"
+			},
+			"Selectstat": {
+				"type": "string",
+				"value": "SELECT * FROM"
+			},
+			"Whereclause": {
+				"type": "string",
+				"value": "WHERE"
+			},
+			"Mnumber": {
+				"type": "string",
+				"value": "No_"
+			},
+			"eqsign": {
+				"type": "string",
+				"value": " = "
+			},
+			"venderNumber": {
+				"type": "string",
+				"value": "10000"
+			},
+			"In": {
+				"type": "string",
+				"value": "IN"
+			}
+		}
+	},
 	"location": "westeurope",
 	"identity": {
 		"type": "SystemAssigned",
