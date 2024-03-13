@@ -24,11 +24,11 @@
 			},
 			"Whereclause": {
 				"type": "string",
-				"value": "WHERE"
+				"value": " WHERE "
 			},
 			"Mnumber": {
 				"type": "string",
-				"value": "No_"
+				"value": " No_ "
 			},
 			"eqsign": {
 				"type": "string",
@@ -36,7 +36,7 @@
 			},
 			"venderNumber": {
 				"type": "string",
-				"value": "10000"
+				"value": "''L00010''"
 			},
 			"In": {
 				"type": "string",
