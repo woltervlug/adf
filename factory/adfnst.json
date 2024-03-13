@@ -5,6 +5,10 @@
 			"Companyname": {
 				"type": "string",
 				"value": "CRONUS Nederland BV"
+			},
+			"DollarT": {
+				"type": "string",
+				"value": "$"
 			}
 		}
 	},
