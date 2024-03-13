@@ -36,7 +36,7 @@
 			},
 			"venderNumber": {
 				"type": "string",
-				"value": "10000"
+				"value": "''L00010''"
 			},
 			"In": {
 				"type": "string",
