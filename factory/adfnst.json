@@ -20,7 +20,7 @@
 			},
 			"Selectstat": {
 				"type": "string",
-				"value": "Select * from"
+				"value": "SELECT * FROM"
 			},
 			"Whereclause": {
 				"type": "string",
