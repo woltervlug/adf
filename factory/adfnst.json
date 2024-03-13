@@ -1,0 +1,9 @@
+{
+	"name": "adfnst",
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "eae8c07c-2ccc-4d72-9ca6-4d41f2014bc6",
+		"tenantId": "bbfde416-ad70-4316-81eb-73b70da0b6cd"
+	}
+}

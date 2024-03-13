@@ -1,0 +1,6 @@
+{
+	"name": "mylocaldb",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}

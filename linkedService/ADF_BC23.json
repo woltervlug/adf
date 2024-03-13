@@ -1,0 +1,16 @@
+{
+	"name": "ADF_BC23",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=False;data source=PASUP-00520\\BCDEMO;initial catalog=\"Demo Database BC (23-0)\";user id=adf",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI4YTc2NzQ0My1mNTM2LTQwOGQtODI1NC05NDgxODhlMDViZTQiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "mylocaldb",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
