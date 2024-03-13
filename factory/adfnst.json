@@ -21,6 +21,10 @@
 			"Selectstat": {
 				"type": "string",
 				"value": "Select * from"
+			},
+			"Whereclause": {
+				"type": "string",
+				"value": "Where"
 			}
 		}
 	},
