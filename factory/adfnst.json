@@ -17,6 +17,10 @@
 			"BCGuid": {
 				"type": "string",
 				"value": "437dbf0e-84ff-417a-965d-ed2bb9650972"
+			},
+			"Selectstat": {
+				"type": "string",
+				"value": "Select * from"
 			}
 		}
 	},
