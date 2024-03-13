@@ -40,7 +40,7 @@
 			},
 			"In": {
 				"type": "string",
-				"value": "in"
+				"value": "IN"
 			}
 		}
 	},
