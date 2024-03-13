@@ -28,6 +28,1024 @@
 					"enableStaging": false,
 					"translator": {
 						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "timestamp",
+									"type": "Byte[]",
+									"physicalType": "timestamp"
+								},
+								"sink": {
+									"name": "timestamp",
+									"type": "Byte[]",
+									"physicalType": "timestamp"
+								}
+							},
+							{
+								"source": {
+									"name": "No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Name",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Name",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Search Name",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Search Name",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Name 2",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Name 2",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Address",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Address",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Address 2",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Address 2",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "City",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "City",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Contact",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Contact",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Phone No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Phone No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Telex No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Telex No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Our Account No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Our Account No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Territory Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Territory Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Global Dimension 1 Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Global Dimension 1 Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Global Dimension 2 Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Global Dimension 2 Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Budgeted Amount",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Budgeted Amount",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Vendor Posting Group",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Vendor Posting Group",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Currency Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Currency Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Language Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Language Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Registration Number",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Registration Number",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Statistics Group",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"name": "Statistics Group",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Payment Terms Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Payment Terms Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Fin_ Charge Terms Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Fin_ Charge Terms Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Purchaser Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Purchaser Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Shipment Method Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Shipment Method Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Shipping Agent Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Shipping Agent Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Invoice Disc_ Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Invoice Disc_ Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Country_Region Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Country_Region Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Blocked",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"name": "Blocked",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Pay-to Vendor No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Pay-to Vendor No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Priority",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"name": "Priority",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Payment Method Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Payment Method Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Last Modified Date Time",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								},
+								"sink": {
+									"name": "Last Modified Date Time",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								}
+							},
+							{
+								"source": {
+									"name": "Last Date Modified",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								},
+								"sink": {
+									"name": "Last Date Modified",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								}
+							},
+							{
+								"source": {
+									"name": "Application Method",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"name": "Application Method",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Prices Including VAT",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								},
+								"sink": {
+									"name": "Prices Including VAT",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								}
+							},
+							{
+								"source": {
+									"name": "Fax No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Fax No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Telex Answer Back",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Telex Answer Back",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "VAT Registration No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "VAT Registration No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Gen_ Bus_ Posting Group",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Gen_ Bus_ Posting Group",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Picture",
+									"type": "Byte[]",
+									"physicalType": "image"
+								},
+								"sink": {
+									"name": "Picture",
+									"type": "Byte[]",
+									"physicalType": "image"
+								}
+							},
+							{
+								"source": {
+									"name": "GLN",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "GLN",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Post Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Post Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "County",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "County",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "EORI Number",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "EORI Number",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "E-Mail",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "E-Mail",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Home Page",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Home Page",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "No_ Series",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "No_ Series",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Tax Area Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Tax Area Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Tax Liable",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								},
+								"sink": {
+									"name": "Tax Liable",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								}
+							},
+							{
+								"source": {
+									"name": "VAT Bus_ Posting Group",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "VAT Bus_ Posting Group",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Block Payment Tolerance",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								},
+								"sink": {
+									"name": "Block Payment Tolerance",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								}
+							},
+							{
+								"source": {
+									"name": "IC Partner Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "IC Partner Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Prepayment _",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Prepayment _",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Partner Type",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"name": "Partner Type",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Intrastat Partner Type",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"name": "Intrastat Partner Type",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Image",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "Image",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								}
+							},
+							{
+								"source": {
+									"name": "Privacy Blocked",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								},
+								"sink": {
+									"name": "Privacy Blocked",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								}
+							},
+							{
+								"source": {
+									"name": "Disable Search by Name",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								},
+								"sink": {
+									"name": "Disable Search by Name",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								}
+							},
+							{
+								"source": {
+									"name": "Creditor No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Creditor No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Allow Multiple Posting Groups",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								},
+								"sink": {
+									"name": "Allow Multiple Posting Groups",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								}
+							},
+							{
+								"source": {
+									"name": "Preferred Bank Account Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Preferred Bank Account Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Coupled to CRM",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								},
+								"sink": {
+									"name": "Coupled to CRM",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								}
+							},
+							{
+								"source": {
+									"name": "Cash Flow Payment Terms Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Cash Flow Payment Terms Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Primary Contact No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Primary Contact No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Mobile Phone No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Mobile Phone No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Responsibility Center",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Responsibility Center",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Location Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Location Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Lead Time Calculation",
+									"type": "String",
+									"physicalType": "varchar"
+								},
+								"sink": {
+									"name": "Lead Time Calculation",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Price Calculation Method",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"name": "Price Calculation Method",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Base Calendar Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Base Calendar Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Document Sending Profile",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Document Sending Profile",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Validate EU Vat Reg_ No_",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								},
+								"sink": {
+									"name": "Validate EU Vat Reg_ No_",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								}
+							},
+							{
+								"source": {
+									"name": "Id",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "Id",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								}
+							},
+							{
+								"source": {
+									"name": "Currency Id",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "Currency Id",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								}
+							},
+							{
+								"source": {
+									"name": "Payment Terms Id",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "Payment Terms Id",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								}
+							},
+							{
+								"source": {
+									"name": "Payment Method Id",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "Payment Method Id",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								}
+							},
+							{
+								"source": {
+									"name": "Over-Receipt Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Over-Receipt Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Transaction Mode Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Transaction Mode Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "$systemId",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "$systemId",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								}
+							},
+							{
+								"source": {
+									"name": "$systemCreatedAt",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								},
+								"sink": {
+									"name": "$systemCreatedAt",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								}
+							},
+							{
+								"source": {
+									"name": "$systemCreatedBy",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "$systemCreatedBy",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								}
+							},
+							{
+								"source": {
+									"name": "$systemModifiedAt",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								},
+								"sink": {
+									"name": "$systemModifiedAt",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								}
+							},
+							{
+								"source": {
+									"name": "$systemModifiedBy",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "$systemModifiedBy",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								}
+							}
+						],
 						"typeConversion": true,
 						"typeConversionSettings": {
 							"allowDataTruncation": true,
