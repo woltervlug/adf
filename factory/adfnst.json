@@ -37,6 +37,10 @@
 			"venderNumber": {
 				"type": "string",
 				"value": "10000"
+			},
+			"In": {
+				"type": "string",
+				"value": "in"
 			}
 		}
 	},
