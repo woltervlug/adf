@@ -1,5 +1,13 @@
 {
 	"name": "adfnst",
+	"properties": {
+		"globalParameters": {
+			"Companyname": {
+				"type": "string",
+				"value": "CRONUS Nederland BV"
+			}
+		}
+	},
 	"location": "westeurope",
 	"identity": {
 		"type": "SystemAssigned",
