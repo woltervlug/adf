@@ -28,7 +28,7 @@
 			},
 			"Mnumber": {
 				"type": "string",
-				"value": "No_"
+				"value": " No_ "
 			},
 			"eqsign": {
 				"type": "string",
