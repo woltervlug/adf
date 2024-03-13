@@ -17,6 +17,10 @@
 				"typeProperties": {
 					"source": {
 						"type": "SqlServerSource",
+						"sqlReaderQuery": {
+							"value": "@concat(pipeline().globalParameters.Selectstat,'[',pipeline().globalParameters.Companyname,pipeline().globalParameters.DollarT,pipeline().globalParameters.BCTable,pipeline().globalParameters.DollarT,pipeline().globalParameters.BCGuid,']',pipeline().globalParameters.Whereclause,pipeline().globalParameters.Mnumber,pipeline().globalParameters.eqsign,pipeline().parameters._nmr)",
+							"type": "Expression"
+						},
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
@@ -1067,6 +1071,12 @@
 				]
 			}
 		],
+		"parameters": {
+			"_nmr": {
+				"type": "string",
+				"defaultValue": "10000"
+			}
+		},
 		"annotations": []
 	}
 }
