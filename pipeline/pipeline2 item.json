@@ -1,0 +1,1968 @@
+{
+	"name": "pipeline2 item",
+	"properties": {
+		"activities": [
+			{
+				"name": "Item",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SqlServerSource",
+						"sqlReaderQuery": {
+							"value": "@concat(pipeline().globalParameters.Selectstat,'[',pipeline().globalParameters.Companyname,pipeline().globalParameters.DollarT,pipeline().globalParameters.BCtable3,pipeline().globalParameters.DollarT,pipeline().globalParameters.BCGuid,']',' where ','No_',' = ',' ''70062'' ')\n\n\n",
+							"type": "Expression"
+						},
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "timestamp",
+									"type": "Byte[]",
+									"physicalType": "timestamp"
+								},
+								"sink": {
+									"name": "timestamp",
+									"type": "Byte[]",
+									"physicalType": "timestamp"
+								}
+							},
+							{
+								"source": {
+									"name": "No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "No_ 2",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "No_ 2",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Description",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Description",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Search Description",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Search Description",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Description 2",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Description 2",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Base Unit of Measure",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Base Unit of Measure",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Price Unit Conversion",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"name": "Price Unit Conversion",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Type",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"name": "Type",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Inventory Posting Group",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Inventory Posting Group",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Shelf No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Shelf No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Item Disc_ Group",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Item Disc_ Group",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Allow Invoice Disc_",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								},
+								"sink": {
+									"name": "Allow Invoice Disc_",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								}
+							},
+							{
+								"source": {
+									"name": "Statistics Group",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"name": "Statistics Group",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Commission Group",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"name": "Commission Group",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Unit Price",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Unit Price",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Price_Profit Calculation",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"name": "Price_Profit Calculation",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Profit _",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Profit _",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Costing Method",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"name": "Costing Method",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Unit Cost",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Unit Cost",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Standard Cost",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Standard Cost",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Last Direct Cost",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Last Direct Cost",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Indirect Cost _",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Indirect Cost _",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Cost is Adjusted",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								},
+								"sink": {
+									"name": "Cost is Adjusted",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								}
+							},
+							{
+								"source": {
+									"name": "Allow Online Adjustment",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								},
+								"sink": {
+									"name": "Allow Online Adjustment",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								}
+							},
+							{
+								"source": {
+									"name": "Vendor No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Vendor No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Vendor Item No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Vendor Item No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Lead Time Calculation",
+									"type": "String",
+									"physicalType": "varchar"
+								},
+								"sink": {
+									"name": "Lead Time Calculation",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Reorder Point",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Reorder Point",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Maximum Inventory",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Maximum Inventory",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Reorder Quantity",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Reorder Quantity",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Alternative Item No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Alternative Item No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Unit List Price",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Unit List Price",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Duty Due _",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Duty Due _",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Duty Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Duty Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Gross Weight",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Gross Weight",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Net Weight",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Net Weight",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Units per Parcel",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Units per Parcel",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Unit Volume",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Unit Volume",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Durability",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Durability",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Freight Type",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Freight Type",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Tariff No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Tariff No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Duty Unit Conversion",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Duty Unit Conversion",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Country_Region Purchased Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Country_Region Purchased Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Budget Quantity",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Budget Quantity",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Budgeted Amount",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Budgeted Amount",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Budget Profit",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Budget Profit",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Blocked",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								},
+								"sink": {
+									"name": "Blocked",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								}
+							},
+							{
+								"source": {
+									"name": "Block Reason",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Block Reason",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Last DateTime Modified",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								},
+								"sink": {
+									"name": "Last DateTime Modified",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								}
+							},
+							{
+								"source": {
+									"name": "Last Date Modified",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								},
+								"sink": {
+									"name": "Last Date Modified",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								}
+							},
+							{
+								"source": {
+									"name": "Last Time Modified",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								},
+								"sink": {
+									"name": "Last Time Modified",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								}
+							},
+							{
+								"source": {
+									"name": "Price Includes VAT",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								},
+								"sink": {
+									"name": "Price Includes VAT",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								}
+							},
+							{
+								"source": {
+									"name": "VAT Bus_ Posting Gr_ (Price)",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "VAT Bus_ Posting Gr_ (Price)",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Gen_ Prod_ Posting Group",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Gen_ Prod_ Posting Group",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Picture",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "Picture",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								}
+							},
+							{
+								"source": {
+									"name": "Country_Region of Origin Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Country_Region of Origin Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Automatic Ext_ Texts",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								},
+								"sink": {
+									"name": "Automatic Ext_ Texts",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								}
+							},
+							{
+								"source": {
+									"name": "No_ Series",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "No_ Series",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Tax Group Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Tax Group Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "VAT Prod_ Posting Group",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "VAT Prod_ Posting Group",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Reserve",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"name": "Reserve",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Global Dimension 1 Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Global Dimension 1 Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Global Dimension 2 Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Global Dimension 2 Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Stockout Warning",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"name": "Stockout Warning",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Prevent Negative Inventory",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"name": "Prevent Negative Inventory",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Variant Mandatory if Exists",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"name": "Variant Mandatory if Exists",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Application Wksh_ User ID",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Application Wksh_ User ID",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Coupled to CRM",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								},
+								"sink": {
+									"name": "Coupled to CRM",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								}
+							},
+							{
+								"source": {
+									"name": "Assembly Policy",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"name": "Assembly Policy",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "GTIN",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "GTIN",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Default Deferral Template Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Default Deferral Template Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Low-Level Code",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"name": "Low-Level Code",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Lot Size",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Lot Size",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Serial Nos_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Serial Nos_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Last Unit Cost Calc_ Date",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								},
+								"sink": {
+									"name": "Last Unit Cost Calc_ Date",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								}
+							},
+							{
+								"source": {
+									"name": "Rolled-up Material Cost",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Rolled-up Material Cost",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Rolled-up Capacity Cost",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Rolled-up Capacity Cost",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Scrap _",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Scrap _",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Inventory Value Zero",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								},
+								"sink": {
+									"name": "Inventory Value Zero",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								}
+							},
+							{
+								"source": {
+									"name": "Discrete Order Quantity",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"name": "Discrete Order Quantity",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Minimum Order Quantity",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Minimum Order Quantity",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Maximum Order Quantity",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Maximum Order Quantity",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Safety Stock Quantity",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Safety Stock Quantity",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Order Multiple",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Order Multiple",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Safety Lead Time",
+									"type": "String",
+									"physicalType": "varchar"
+								},
+								"sink": {
+									"name": "Safety Lead Time",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Flushing Method",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"name": "Flushing Method",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Replenishment System",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"name": "Replenishment System",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Rounding Precision",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Rounding Precision",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Sales Unit of Measure",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Sales Unit of Measure",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Purch_ Unit of Measure",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Purch_ Unit of Measure",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Time Bucket",
+									"type": "String",
+									"physicalType": "varchar"
+								},
+								"sink": {
+									"name": "Time Bucket",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Reordering Policy",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"name": "Reordering Policy",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Include Inventory",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								},
+								"sink": {
+									"name": "Include Inventory",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								}
+							},
+							{
+								"source": {
+									"name": "Manufacturing Policy",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"name": "Manufacturing Policy",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Rescheduling Period",
+									"type": "String",
+									"physicalType": "varchar"
+								},
+								"sink": {
+									"name": "Rescheduling Period",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Lot Accumulation Period",
+									"type": "String",
+									"physicalType": "varchar"
+								},
+								"sink": {
+									"name": "Lot Accumulation Period",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Dampener Period",
+									"type": "String",
+									"physicalType": "varchar"
+								},
+								"sink": {
+									"name": "Dampener Period",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Dampener Quantity",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Dampener Quantity",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Overflow Level",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Overflow Level",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Manufacturer Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Manufacturer Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Item Category Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Item Category Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Created From Nonstock Item",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								},
+								"sink": {
+									"name": "Created From Nonstock Item",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								}
+							},
+							{
+								"source": {
+									"name": "Product Group Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Product Group Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Purchasing Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Purchasing Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Service Item Group",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Service Item Group",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Item Tracking Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Item Tracking Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Lot Nos_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Lot Nos_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Expiration Calculation",
+									"type": "String",
+									"physicalType": "varchar"
+								},
+								"sink": {
+									"name": "Expiration Calculation",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Warehouse Class Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Warehouse Class Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Special Equipment Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Special Equipment Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Put-away Template Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Put-away Template Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Put-away Unit of Measure Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Put-away Unit of Measure Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Phys Invt Counting Period Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Phys Invt Counting Period Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Last Counting Period Update",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								},
+								"sink": {
+									"name": "Last Counting Period Update",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								}
+							},
+							{
+								"source": {
+									"name": "Use Cross-Docking",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								},
+								"sink": {
+									"name": "Use Cross-Docking",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								}
+							},
+							{
+								"source": {
+									"name": "Next Counting Start Date",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								},
+								"sink": {
+									"name": "Next Counting Start Date",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								}
+							},
+							{
+								"source": {
+									"name": "Next Counting End Date",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								},
+								"sink": {
+									"name": "Next Counting End Date",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								}
+							},
+							{
+								"source": {
+									"name": "Id",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "Id",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								}
+							},
+							{
+								"source": {
+									"name": "Unit of Measure Id",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "Unit of Measure Id",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								}
+							},
+							{
+								"source": {
+									"name": "Tax Group Id",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "Tax Group Id",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								}
+							},
+							{
+								"source": {
+									"name": "Sales Blocked",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								},
+								"sink": {
+									"name": "Sales Blocked",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								}
+							},
+							{
+								"source": {
+									"name": "Purchasing Blocked",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								},
+								"sink": {
+									"name": "Purchasing Blocked",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								}
+							},
+							{
+								"source": {
+									"name": "Item Category Id",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "Item Category Id",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								}
+							},
+							{
+								"source": {
+									"name": "Inventory Posting Group Id",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "Inventory Posting Group Id",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								}
+							},
+							{
+								"source": {
+									"name": "Gen_ Prod_ Posting Group Id",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "Gen_ Prod_ Posting Group Id",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								}
+							},
+							{
+								"source": {
+									"name": "Over-Receipt Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Over-Receipt Code",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Routing No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Routing No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Production BOM No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Production BOM No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Single-Level Material Cost",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Single-Level Material Cost",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Single-Level Capacity Cost",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Single-Level Capacity Cost",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Single-Level Subcontrd_ Cost",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Single-Level Subcontrd_ Cost",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Single-Level Cap_ Ovhd Cost",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Single-Level Cap_ Ovhd Cost",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Single-Level Mfg_ Ovhd Cost",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Single-Level Mfg_ Ovhd Cost",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Overhead Rate",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Overhead Rate",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Rolled-up Subcontracted Cost",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Rolled-up Subcontracted Cost",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Rolled-up Mfg_ Ovhd Cost",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Rolled-up Mfg_ Ovhd Cost",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Rolled-up Cap_ Overhead Cost",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								},
+								"sink": {
+									"name": "Rolled-up Cap_ Overhead Cost",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 20,
+									"precision": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Order Tracking Policy",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"name": "Order Tracking Policy",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Critical",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								},
+								"sink": {
+									"name": "Critical",
+									"type": "Byte",
+									"physicalType": "tinyint"
+								}
+							},
+							{
+								"source": {
+									"name": "Common Item No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "Common Item No_",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "$systemId",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "$systemId",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								}
+							},
+							{
+								"source": {
+									"name": "$systemCreatedAt",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								},
+								"sink": {
+									"name": "$systemCreatedAt",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								}
+							},
+							{
+								"source": {
+									"name": "$systemCreatedBy",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "$systemCreatedBy",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								}
+							},
+							{
+								"source": {
+									"name": "$systemModifiedAt",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								},
+								"sink": {
+									"name": "$systemModifiedAt",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								}
+							},
+							{
+								"source": {
+									"name": "$systemModifiedBy",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "$systemModifiedBy",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								}
+							}
+						],
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "source",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "target",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": []
+	}
+}
