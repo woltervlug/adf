@@ -45,6 +45,10 @@
 			"BCTable1": {
 				"type": "string",
 				"value": "Customer"
+			},
+			"BCtable3": {
+				"type": "string",
+				"value": "Item"
 			}
 		}
 	},
