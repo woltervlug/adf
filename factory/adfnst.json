@@ -41,6 +41,10 @@
 			"In": {
 				"type": "string",
 				"value": "IN"
+			},
+			"BCTable1": {
+				"type": "string",
+				"value": "Customer"
 			}
 		}
 	},
