@@ -18,7 +18,7 @@
 					"source": {
 						"type": "SqlServerSource",
 						"sqlReaderQuery": {
-							"value": "@concat(pipeline().globalParameters.Selectstat,'[',pipeline().globalParameters.Companyname,pipeline().globalParameters.DollarT,pipeline().globalParameters.BCTable1,pipeline().globalParameters.DollarT,pipeline().globalParameters.BCGuid,']',' where ','No_',' = ',' ''K00010'' ')\n",
+							"value": "@concat(pipeline().globalParameters.Selectstat,'[',pipeline().globalParameters.Companyname,pipeline().globalParameters.DollarT,pipeline().globalParameters.BCTable1,pipeline().globalParameters.DollarT,pipeline().globalParameters.BCGuid,']',' where ','No_',' in ',' ( ''K00010'' , ''K00020'' ) ')\n",
 							"type": "Expression"
 						},
 						"queryTimeout": "02:00:00",
