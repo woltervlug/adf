@@ -18,7 +18,7 @@
 					"source": {
 						"type": "SqlServerSource",
 						"sqlReaderQuery": {
-							"value": "@concat(pipeline().globalParameters.Selectstat,'[',pipeline().globalParameters.Companyname,pipeline().globalParameters.DollarT,pipeline().globalParameters.BCTable,pipeline().globalParameters.DollarT,pipeline().globalParameters.BCGuid,']',pipeline().globalParameters.Whereclause,pipeline().globalParameters.Mnumber,pipeline().globalParameters.eqsign,' ''L00010'' ')\n",
+							"value": "@concat(pipeline().globalParameters.Selectstat,'[',pipeline().globalParameters.Companyname,pipeline().globalParameters.DollarT,pipeline().globalParameters.BCTable,pipeline().globalParameters.DollarT,pipeline().globalParameters.BCGuid,']',pipeline().globalParameters.Whereclause,pipeline().globalParameters.Mnumber,pipeline().globalParameters.Instat,'( ''L00010'' , ''L00020'' )')",
 							"type": "Expression"
 						},
 						"queryTimeout": "02:00:00",
@@ -1074,7 +1074,7 @@
 		"parameters": {
 			"_nmr": {
 				"type": "string",
-				"defaultValue": "10000"
+				"defaultValue": "''L00010'' "
 			}
 		},
 		"annotations": []
