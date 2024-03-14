@@ -38,7 +38,7 @@
 				"type": "string",
 				"value": "' ''L00010'' '"
 			},
-			"In": {
+			"Instat": {
 				"type": "string",
 				"value": " IN "
 			},
