@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy data1",
+				"name": "Vendor",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -18,7 +18,7 @@
 					"source": {
 						"type": "SqlServerSource",
 						"sqlReaderQuery": {
-							"value": "@concat(pipeline().globalParameters.Selectstat,'[',pipeline().globalParameters.Companyname,pipeline().globalParameters.DollarT,pipeline().globalParameters.BCTable,pipeline().globalParameters.DollarT,pipeline().globalParameters.BCGuid,']',pipeline().globalParameters.Whereclause,pipeline().globalParameters.Mnumber,pipeline().globalParameters.eqsign,' ''L00010'' ')",
+							"value": "@concat(pipeline().globalParameters.Selectstat,'[',pipeline().globalParameters.Companyname,pipeline().globalParameters.DollarT,pipeline().globalParameters.BCTable,pipeline().globalParameters.DollarT,pipeline().globalParameters.BCGuid,']',pipeline().globalParameters.Whereclause,pipeline().globalParameters.Mnumber,pipeline().globalParameters.eqsign,' ''L00010'' ')\n",
 							"type": "Expression"
 						},
 						"queryTimeout": "02:00:00",

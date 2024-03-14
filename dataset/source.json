@@ -5,6 +5,12 @@
 			"referenceName": "ADF_BC22",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"TEST": {
+				"type": "string",
+				"defaultValue": " ''L00010'' "
+			}
+		},
 		"annotations": [],
 		"type": "SqlServerTable",
 		"schema": [],
