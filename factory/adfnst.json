@@ -40,7 +40,7 @@
 			},
 			"In": {
 				"type": "string",
-				"value": "IN"
+				"value": " IN "
 			},
 			"BCTable1": {
 				"type": "string",
