@@ -35,18 +35,6 @@
 						"mappings": [
 							{
 								"source": {
-									"name": "timestamp",
-									"type": "Byte[]",
-									"physicalType": "timestamp"
-								},
-								"sink": {
-									"name": "timestamp",
-									"type": "Byte[]",
-									"physicalType": "timestamp"
-								}
-							},
-							{
-								"source": {
 									"name": "No_",
 									"type": "String",
 									"physicalType": "nvarchar"
